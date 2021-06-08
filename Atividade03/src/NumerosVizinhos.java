@@ -7,7 +7,7 @@ public class NumerosVizinhos {
 		int antes, depois;
 		antes = numero - 1;
 		depois = numero + 1;
-		JOptionPane.showMessageDialog(null, "Os números vizinhos são  "+antes +" e " +depois);
+		JOptionPane.showMessageDialog(null, "Os números vizinhos são  " + antes + " e " + depois);
 	}
 
 }
