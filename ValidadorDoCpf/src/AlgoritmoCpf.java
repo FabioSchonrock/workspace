@@ -1,10 +1,9 @@
 import javax.swing.text.MaskFormatter;
 
 public class AlgoritmoCpf {
-	
+
 	public static void main(String[] args) {
-		
-		
+
 		int[] cpf = new int[11];
 		cpf[0] = 1;
 		cpf[1] = 1;

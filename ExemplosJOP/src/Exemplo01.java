@@ -11,11 +11,12 @@ public class Exemplo01 {
 				JOptionPane.WARNING_MESSAGE, null, options, options[0]);
 		@SuppressWarnings("unused")
 		String nome = JOptionPane.showInputDialog("Digite seu nome");
-		System.out.println("O nome digitado foi: "+nome);
-		
-		Object[] itens = {"Maçã","Pera", "Banana"};
-		Object itemSelecionado = JOptionPane.showInputDialog(null, "Escolha 1 item", "Itens", JOptionPane.INFORMATION_MESSAGE, null, itens, itens[1]);
-		System.out.println("Item selecionado: "+itemSelecionado.toString());
+		System.out.println("O nome digitado foi: " + nome);
+
+		Object[] itens = { "Maçã", "Pera", "Banana" };
+		Object itemSelecionado = JOptionPane.showInputDialog(null, "Escolha 1 item", "Itens",
+				JOptionPane.INFORMATION_MESSAGE, null, itens, itens[1]);
+		System.out.println("Item selecionado: " + itemSelecionado.toString());
 	}
 
 }
