@@ -1,9 +1,15 @@
+import javax.swing.JOptionPane;
 import javax.swing.text.MaskFormatter;
 
 public class AlgoritmoCpf {
 
 	public static void main(String[] args) {
-
+		
+		String txtCpf = JOptionPane.showInputDialog("Digite o CPF:");
+		String[] str = txtCpf.split("");
+		
+		
+		
 		int[] cpf = new int[11];
 		cpf[0] = 1;
 		cpf[1] = 1;
@@ -60,8 +66,17 @@ public class AlgoritmoCpf {
 		} else {
 			cpf[10] = 11 - resto;
 		}
+		
+		String cpfValido = "";
 		for (int i = 0; i <= 10; i++) {
-			System.out.print(cpf[i]);
+			cpfValido += cpf[i];
 		}
+		
+		String msg = "";
+		if(cpfValido.equals(txtCpf)) {
+			msg = "O CPF informado é válido" + cpfValido;
+			} else {
+				msg = "O CPF informado é inválido");
+			}
 	}
 }
