@@ -1,18 +1,25 @@
 import javax.swing.JOptionPane;
 
-import com.sun.tools.javac.util.Convert;
-
+import java.text.Format;
 import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Cadastro {
-	private String nome = JOptionPane.showInputDialog("Por favor digite o seu nome:");
-	private String nasc = JOptionPane.showInputDialog("Por favor digite a sua data de nascimento");
-	private float alt = Float.parseFloat(JOptionPane.showInputDialog("Por favor digite a sua altura: "));
+	private String nome;
+	private String nasc;
+	private float alt;
 
 	public Cadastro(String nome, String nasc, float alt) {
 		this.nome = nome;
 		this.nasc = nasc;
 		this.alt = alt;
+	}
+	
+	public String dados() {
+		return "Nome: " + nome + "\n Data de nascimento: " + "nasc" + "\n altura";
+		
 	}
 
 	public String getnome() {
@@ -29,7 +36,6 @@ public class Cadastro {
 
 	public void setnasc() {
 		this.nasc = nasc;
-
 	}
 
 	public double getalt() {
@@ -44,16 +50,6 @@ public class Cadastro {
 		System.out.println("Nome: " + this.getnome());
 		System.out.println("Data de nascimento: " + this.getnasc());
 		System.out.println("Altura: " + this.getalt());
-	}
-	
-	public static void main(String[] args) {
-	    LocalDate myObj = LocalDate.now(); // Create a date object
-	    System.out.println(myObj); // Display the current date
-	  }
-	
-	public void calculaIdade() {
-		
-		
 	}
 
 }
